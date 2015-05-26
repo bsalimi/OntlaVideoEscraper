@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="jaunt0.9.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/jaunt0.9.9.9.zip!/" />
+      <root url="jar://$USER_HOME$/Downloads/jsoup-1.8.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Downloads/jaunt0.9.9.9.zip!/jaunt0.9.9.9/javadocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/jaunt0.9.9.9.zip!/jaunt0.9.9.9/examples" />
+      <root url="jar://$USER_HOME$/Downloads/jaunt0.9.9.9.zip!/jaunt0.9.9.9/examples_advanced" />
+    </SOURCES>
+  </library>
+</component>
