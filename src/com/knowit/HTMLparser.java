@@ -11,20 +11,9 @@ import java.io.IOException;
  * Created by bsalimi on 5/25/15.
  */
 public class HTMLparser {
-    String url;
-    Document content;
-    String youtubetLinks;
 
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) throws IOException {
-        this.url = url;
-        this.getContent();
-    }
-
-    private Document getContent() throws IOException {
+    public Document getdocument(String url) throws IOException {
+        Document content=null;
         try {
             content = Jsoup.connect(url).get();
 
@@ -34,10 +23,16 @@ public class HTMLparser {
         return content;
     }
 
-    public String gettitle(String URL) {
+    public String gettitle(String url) throws IOException {
+        Document content=getdocument(url);
         return content.title();
     }
-    public String getyoutubelinks(String URL) {
+    public String gettext(String url) throws IOException {
+        Document content=getdocument(url);
+        return content.text();
+    }
+    public String ExtractYoutubeLinks(String url) throws IOException {
+        Document content=getdocument(url);
         Elements youtube;
         String youtubelink;
         youtube=content.getElementsByAttributeValueMatching("src", "youtube");
